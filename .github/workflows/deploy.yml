@@ -17,7 +17,7 @@ jobs:
 
     - name: 🧱 Build Docker image
       run: |
-        docker build -t fastapi-ml-app:latest .
+        docker build --progress=plain -t fastapi-ml-app:latest .
 
     - name: ✅ Run container to test
       run: |
